@@ -1,0 +1,22 @@
+{
+  "name": "Portal Quaresma 2026",
+  "short_name": "Quaresma 2026",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d2b33",
+  "description": "Propósitos diários da Quaresma 2026 com progresso offline.",
+  "icons": [
+    {
+      "src": "./icons/icon-gold-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-gold-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
