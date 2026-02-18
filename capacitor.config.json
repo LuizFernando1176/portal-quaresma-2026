@@ -1,6 +1,6 @@
 {
   "appId": "br.com.nando.quaresma",
   "appName": "Quaresma 2026",
-  "webDir": "web",
+  "webDir": "/docs",
   "bundledWebRuntime": false
 }
