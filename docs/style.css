@@ -1,0 +1,316 @@
+:root{
+  --ink:#1b1f24;
+  --muted:#6b7680;
+  --line:#e6eaee;
+  --bg:#f5f7f9;
+
+  --brand:#0D2B33;
+  --brand2:#5E8E9C;
+  --accent:#88AEB9;
+}
+
+.portal-bg{ background: var(--bg); color: var(--ink); }
+
+.portal-topbar{ background:#fff; border-bottom:1px solid var(--line); }
+
+.portal-logo{ display:flex; gap:6px; }
+.portal-logo .dot{ width:10px; height:10px; border-radius:50%; background: var(--brand2); }
+.portal-logo .dot:nth-child(2){ background: var(--accent); }
+.portal-logo .dot:nth-child(3){ background: var(--brand); }
+
+.portal-title{ font-weight:800; letter-spacing:.3px; }
+.portal-subtitle{ font-size:12px; color: var(--muted); }
+
+.kicker{
+  font-size:11px;
+  letter-spacing:.12em;
+  color: var(--brand2);
+  font-weight:800;
+}
+
+.portal-hero{
+  background: linear-gradient(90deg, rgba(13,43,51,.06), rgba(94,142,156,.08));
+}
+
+.stat{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px 12px;
+  min-width: 92px;
+}
+.stat-label{
+  font-size:11px;
+  color: var(--muted);
+  letter-spacing:.08em;
+  text-transform: uppercase;
+}
+.stat-value{
+  font-size:18px;
+  font-weight:900;
+  color: var(--brand);
+}
+
+.portal-box{
+  background: linear-gradient(180deg, rgba(13,43,51,.06), rgba(136,174,185,.08));
+  border:1px solid var(--line);
+}
+
+.day-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.day-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.day-head{
+  padding:12px 14px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+}
+.day-title{
+  font-weight:800;
+  margin:0;
+  font-size:14px;
+}
+.day-meta{
+  font-size:12px;
+  color: var(--muted);
+  margin-top:2px;
+}
+.pill{
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:12px;
+  font-weight:800;
+  background: rgba(94,142,156,.12);
+  color: var(--brand);
+  border:1px solid rgba(94,142,156,.18);
+  white-space:nowrap;
+}
+
+.day-body{ padding:12px 14px; color:#2a3138; }
+.day-desc{ font-size:13px; line-height:1.35; }
+
+.day-actions{
+  padding:12px 14px;
+  border-top:1px solid var(--line);
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.btn-mini{
+  padding:7px 10px;
+  border-radius:12px;
+  font-weight:700;
+  font-size:12px;
+}
+
+/* estados */
+.state-done{ border-left: 6px solid #198754; }
+.state-redo{ border-left: 6px solid #fd7e14; }
+.state-todo{ border-left: 6px solid #adb5bd; }
+
+.badge-state{
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform: uppercase;
+}
+.badge-done{ color:#198754; }
+.badge-redo{ color:#fd7e14; }
+.badge-todo{ color:#6c757d; }
+.portal-modal-box{
+  background: linear-gradient(180deg, rgba(13,43,51,.05), rgba(94,142,156,.06));
+  border: 1px solid var(--line);
+}
+/* ====== Upgrade visual dos cards (Portal + sacro moderno) ====== */
+
+/* Fonte (sem depender de Google Fonts) */
+.portal-bg{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Card mais “premium” */
+.day-card{
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,.06);
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* faixa suave no topo do card (efeito portal) */
+.day-card::before{
+  content:"";
+  position:absolute;
+  left:0; top:0; right:0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--brand), var(--brand2), var(--accent));
+  opacity: .85;
+}
+
+/* header mais organizado */
+.day-head{
+  padding: 14px 14px 10px 14px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+/* título mais forte */
+.day-title{
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .2px;
+  color: var(--ink);
+}
+
+/* meta mais legível */
+.day-meta{
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+/* descrição com mais respiro */
+.day-body{
+  padding: 12px 14px 8px 14px;
+}
+.day-desc{
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #2b3137;
+}
+
+/* ações com botões mais “portal” */
+.day-actions{
+  padding: 12px 14px 14px 14px;
+  border-top: 1px solid rgba(0,0,0,.06);
+  justify-content: flex-start;
+}
+.btn-mini{
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+/* ====== SUPER DESTAQUE PARA O DIA ====== */
+
+/* substitui a pill simples por um “badge grande” */
+.pill{
+  background: rgba(13,43,51,.06);
+  border: 1px solid rgba(13,43,51,.16);
+  color: var(--brand);
+  padding: 8px 12px;
+  border-radius: 14px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* número do dia grande */
+.pill::before{
+  content:"DIA";
+  font-size: 10px;
+  opacity: .75;
+  letter-spacing: .14em;
+}
+
+/* realce extra: “selo” no canto */
+.day-card .pill{
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+/* destaque por estado: além da borda esquerda, cria um glow suave */
+.state-done{ box-shadow: 0 10px 26px rgba(25,135,84,.12); }
+.state-redo{ box-shadow: 0 10px 26px rgba(253,126,20,.12); }
+.state-todo{ box-shadow: 0 10px 26px rgba(108,117,125,.10); }
+
+/* badge de status mais visível */
+.badge-state{
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+.badge-done{ color:#198754; }
+.badge-redo{ color:#fd7e14; }
+.badge-todo{ color:#6c757d; }
+
+/* =======================
+   BOTÕES PORTAL QUARESMA
+   ======================= */
+
+/* Base */
+.btn-portal{
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 7px 14px;
+  transition: all .25s ease;
+  letter-spacing: .03em;
+}
+
+/* FEITA */
+.btn-feita{
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 16px rgba(13,43,51,.25);
+}
+.btn-feita:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(13,43,51,.35);
+}
+
+/* REFAZER */
+.btn-refazer{
+  background: rgba(94,142,156,.10);
+  border: 1px solid rgba(94,142,156,.35);
+  color: var(--brand2);
+}
+.btn-refazer:hover{
+  background: rgba(94,142,156,.18);
+  transform: translateY(-2px);
+}
+
+/* VER */
+.btn-ver{
+  background: transparent;
+  border: 1px solid rgba(0,0,0,.15);
+  color: #2c333a;
+}
+.btn-ver:hover{
+  background: rgba(0,0,0,.05);
+  transform: translateY(-2px);
+}
+
+/* versão pequena */
+.btn-mini{
+  padding: 6px 12px;
+}
+.portal-modal-box{
+  background: linear-gradient(180deg, rgba(13,43,51,.05), rgba(94,142,156,.06));
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+/* “dourado” do tema (ícone/realce) */
+:root{
+  --gold: #d6b15e;
+}
+.portal-logo .dot{
+  background: var(--gold);
+}

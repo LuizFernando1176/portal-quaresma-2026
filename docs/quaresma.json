@@ -1,0 +1,322 @@
+[
+  {
+    "dia": 1,
+    "data": "2026-02-18",
+    "titulo": "Quarta-feira de Cinzas",
+    "tipo": "penitencia",
+    "texto_biblico": "Joel 2,12",
+    "descricao": "Jejum e abstinência de carne"
+  },
+  {
+    "dia": 2,
+    "data": "2026-02-19",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 51,12",
+    "descricao": "Não reclamar de nada hoje (nem em voz alta, nem por mensagem)."
+  },
+  {
+    "dia": 3,
+    "data": "2026-02-20",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 6,1",
+    "descricao": "Desligar as notificações do celular"
+  },
+  {
+    "dia": 4,
+    "data": "2026-02-21",
+    "titulo": "Sábado",
+    "tipo": "penitencia",
+    "texto_biblico": "Isaías 1,16-17",
+    "descricao": "Pedir perdão ou reconhecer um erro (mesmo que só interiormente)."
+  },
+  {
+    "dia": 5,
+    "data": "2026-02-23",
+    "titulo": "Segunda-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Provérbios 4,23",
+    "descricao": "Evitar palavras negativas, fofoca ou críticas durante o dia."
+  },
+  {
+    "dia": 6,
+    "data": "2026-02-24",
+    "titulo": "Terça-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 5,8",
+    "descricao": "Não julgar ninguém, nem mentalmente."
+  },
+  {
+    "dia": 7,
+    "data": "2026-02-25",
+    "titulo": "Quarta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 37,5",
+    "descricao": "Entregar a Deus uma preocupação e não retomá-la hoje."
+  },
+  {
+    "dia": 8,
+    "data": "2026-02-26",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Lucas 9,23",
+    "descricao": "Aceitar uma contrariedade sem reclamar."
+  },
+  {
+    "dia": 9,
+    "data": "2026-02-27",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Romanos 12,2",
+    "descricao": "Ficar ao menos 2 horas sem redes sociais."
+  },
+  {
+    "dia": 10,
+    "data": "2026-02-28",
+    "titulo": "Sábado",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 11,28",
+    "descricao": "Escutar alguém até o fim, sem interromper."
+  },
+  {
+    "dia": 11,
+    "data": "2026-03-02",
+    "titulo": "Segunda-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Ezequiel 36,26",
+    "descricao": "Ficar o dia mais em silêncio falando o mínimo necessário."
+  },
+  {
+    "dia": 12,
+    "data": "2026-03-03",
+    "titulo": "Terça-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 119,105",
+    "descricao": "Ler ao menos 5 minutos da Bíblia."
+  },
+  {
+    "dia": 13,
+    "data": "2026-03-04",
+    "titulo": "Quarta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Lucas 6,36",
+    "descricao": "Praticar um gesto de misericórdia concreta (ajuda, escuta, paciência)."
+  },
+  {
+    "dia": 14,
+    "data": "2026-03-05",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 4,4",
+    "descricao": "Abrir mão de um excesso (doce, refrigerante, compra desnecessária)."
+  },
+  {
+    "dia": 15,
+    "data": "2026-03-06",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Filipenses 2,3",
+    "descricao": "Servir alguém em casa ou no trabalho sem ser pedido."
+  },
+  {
+    "dia": 16,
+    "data": "2026-03-07",
+    "titulo": "Sábado",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 46,11",
+    "descricao": "Desligar a TV ou o celular 30 minutos mais cedo."
+  },
+  {
+    "dia": 17,
+    "data": "2026-03-09",
+    "titulo": "Segunda-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 18,21-22",
+    "descricao": "Perdoar alguém no coração, mesmo sem falar com a pessoa."
+  },
+  {
+    "dia": 18,
+    "data": "2026-03-10",
+    "titulo": "Terça-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Colossenses 3,12",
+    "descricao": "Doar alimentos não perecíveis (entregar na igreja)."
+  },
+  {
+    "dia": 19,
+    "data": "2026-03-11",
+    "titulo": "Quarta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Isaías 58,6",
+    "descricao": "Ajudar alguém com tempo, atenção ou recurso material."
+  },
+  {
+    "dia": 20,
+    "data": "2026-03-12",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "João 13,14",
+    "descricao": "Realizar um serviço que normalmente você evita."
+  },
+  {
+    "dia": 21,
+    "data": "2026-03-13",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Romanos 8,1",
+    "descricao": "Parar de se culpar por algo já confessado ou resolvido."
+  },
+  {
+    "dia": 22,
+    "data": "2026-03-14",
+    "titulo": "Sábado",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 130,7",
+    "descricao": "Rezar por alguém que está desanimado ou distante da fé."
+  },
+  {
+    "dia": 23,
+    "data": "2026-03-16",
+    "titulo": "Segunda-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 7,7",
+    "descricao": "Rezar antes de tomar decisões hoje."
+  },
+  {
+    "dia": 24,
+    "data": "2026-03-17",
+    "titulo": "Terça-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Lucas 15,20",
+    "descricao": "Visitar um doente."
+  },
+  {
+    "dia": 25,
+    "data": "2026-03-18",
+    "titulo": "Quarta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "João 8,11",
+    "descricao": "Evitar conscientemente um pecado recorrente."
+  },
+  {
+    "dia": 26,
+    "data": "2026-03-19",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 1,18-24",
+    "descricao": "Doar roupas que você não usa – em bom estado de conservação."
+  },
+  {
+    "dia": 27,
+    "data": "2026-03-20",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 34,19",
+    "descricao": "Oferecer um cansaço ou dificuldade do dia a Deus."
+  },
+  {
+    "dia": 28,
+    "data": "2026-03-21",
+    "titulo": "Sábado",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 20,28",
+    "descricao": "Visitar idosos, principalmente em asilos e casas de repouso."
+  },
+  {
+    "dia": 29,
+    "data": "2026-03-23",
+    "titulo": "Segunda-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 62,6",
+    "descricao": "Dormir sem travesseiro."
+  },
+  {
+    "dia": 30,
+    "data": "2026-03-24",
+    "titulo": "Terça-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "João 6,35",
+    "descricao": "Não tomar o café da tarde oferecendo o sacrifício."
+  },
+  {
+    "dia": 31,
+    "data": "2026-03-25",
+    "titulo": "Quarta-feira – Anunciação",
+    "tipo": "penitencia",
+    "texto_biblico": "Lucas 1,38",
+    "descricao": "Dizer “sim” a uma responsabilidade que você evita."
+  },
+  {
+    "dia": 32,
+    "data": "2026-03-26",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Mateus 26,41",
+    "descricao": "Vigiar palavras e reações impulsivas."
+  },
+  {
+    "dia": 33,
+    "data": "2026-03-27",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 116,12",
+    "descricao": "Agradecer verbalmente alguém hoje."
+  },
+  {
+    "dia": 34,
+    "data": "2026-03-28",
+    "titulo": "Sábado",
+    "tipo": "penitencia",
+    "texto_biblico": "Lucas 23,34",
+    "descricao": "Não consumir refrigerante e doar o valor."
+  },
+  {
+    "dia": 35,
+    "data": "2026-03-30",
+    "titulo": "Segunda-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Salmo 62,6",
+    "descricao": "Confiar menos em si e mais em Deus hoje."
+  },
+  {
+    "dia": 36,
+    "data": "2026-03-31",
+    "titulo": "Terça-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "João 6,35",
+    "descricao": "Ouvir as pessoas incômodas sem as interromper."
+  },
+  {
+    "dia": 37,
+    "data": "2026-04-01",
+    "titulo": "Quarta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Joel 2,12-13",
+    "descricao": "Não mexer no telefone depois das 18h."
+  },
+  {
+    "dia": 38,
+    "data": "2026-04-02",
+    "titulo": "Quinta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Isaías 58,6-7",
+    "descricao": "Rezar o Santo Terço."
+  },
+  {
+    "dia": 39,
+    "data": "2026-04-03",
+    "titulo": "Sexta-feira",
+    "tipo": "penitencia",
+    "texto_biblico": "Lucas 15,17-20",
+    "descricao": "Visitar o cemitério e rezar pelas almas do purgatório."
+  },
+  {
+    "dia": 40,
+    "data": "2026-04-04",
+    "titulo": "Sábado (até o pôr do sol)",
+    "tipo": "penitencia",
+    "texto_biblico": "2 Coríntios 7,10",
+    "descricao": "Retirar alimentos que gosta muito: pão, arroz, café, etc."
+  }
+]
