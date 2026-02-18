@@ -1,316 +1,407 @@
-:root{
-  --ink:#1b1f24;
-  --muted:#6b7680;
-  --line:#e6eaee;
-  --bg:#f5f7f9;
+:root {
+  /* Paleta Sacra Quaresmal */
+  --sacro-dark: #1a1626;      /* Roxo quase preto (Noite da alma) */
+  --sacro-purple: #3e3259;    /* Roxo Litúrgico Sóbrio */
+  --sacro-gold: #cfa863;      /* Dourado Antigo */
+  --sacro-gold-dim: #b08d55;  /* Dourado Escuro */
+  --sacro-paper: #fcfbf7;     /* Cor de Papel Bíblia/Marfim */
+  --sacro-line: #e8e3d8;      /* Linhas sutis */
+  
+  --text-main: #2c2738;
+  --text-muted: #6f6b7d;
 
-  --brand:#0D2B33;
-  --brand2:#5E8E9C;
-  --accent:#88AEB9;
+  /* Estados */
+  --state-done: #3a6b52; /* Verde Musgo (Esperança/Feito) */
+  --state-redo: #b85c38; /* Terracota (Penitência/Refazer) */
+  --state-todo: #8c8a96; /* Cinza Pedra */
+
+  /* Layout */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
 }
 
-.portal-bg{ background: var(--bg); color: var(--ink); }
-
-.portal-topbar{ background:#fff; border-bottom:1px solid var(--line); }
-
-.portal-logo{ display:flex; gap:6px; }
-.portal-logo .dot{ width:10px; height:10px; border-radius:50%; background: var(--brand2); }
-.portal-logo .dot:nth-child(2){ background: var(--accent); }
-.portal-logo .dot:nth-child(3){ background: var(--brand); }
-
-.portal-title{ font-weight:800; letter-spacing:.3px; }
-.portal-subtitle{ font-size:12px; color: var(--muted); }
-
-.kicker{
-  font-size:11px;
-  letter-spacing:.12em;
-  color: var(--brand2);
-  font-weight:800;
+body.portal-bg {
+  background-color: var(--sacro-paper);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-.portal-hero{
-  background: linear-gradient(90deg, rgba(13,43,51,.06), rgba(94,142,156,.08));
-}
-
-.stat{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:10px 12px;
-  min-width: 92px;
-}
-.stat-label{
-  font-size:11px;
-  color: var(--muted);
-  letter-spacing:.08em;
-  text-transform: uppercase;
-}
-.stat-value{
-  font-size:18px;
-  font-weight:900;
-  color: var(--brand);
-}
-
-.portal-box{
-  background: linear-gradient(180deg, rgba(13,43,51,.06), rgba(136,174,185,.08));
-  border:1px solid var(--line);
-}
-
-.day-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:16px;
-  overflow:hidden;
-  transition: transform .12s ease, box-shadow .12s ease;
-}
-.day-card:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
-}
-
-.day-head{
-  padding:12px 14px;
-  border-bottom:1px solid var(--line);
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:10px;
-}
-.day-title{
-  font-weight:800;
-  margin:0;
-  font-size:14px;
-}
-.day-meta{
-  font-size:12px;
-  color: var(--muted);
-  margin-top:2px;
-}
-.pill{
-  border-radius:999px;
-  padding:6px 10px;
-  font-size:12px;
-  font-weight:800;
-  background: rgba(94,142,156,.12);
-  color: var(--brand);
-  border:1px solid rgba(94,142,156,.18);
-  white-space:nowrap;
-}
-
-.day-body{ padding:12px 14px; color:#2a3138; }
-.day-desc{ font-size:13px; line-height:1.35; }
-
-.day-actions{
-  padding:12px 14px;
-  border-top:1px solid var(--line);
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-}
-
-.btn-mini{
-  padding:7px 10px;
-  border-radius:12px;
-  font-weight:700;
-  font-size:12px;
-}
-
-/* estados */
-.state-done{ border-left: 6px solid #198754; }
-.state-redo{ border-left: 6px solid #fd7e14; }
-.state-todo{ border-left: 6px solid #adb5bd; }
-
-.badge-state{
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:.06em;
-  text-transform: uppercase;
-}
-.badge-done{ color:#198754; }
-.badge-redo{ color:#fd7e14; }
-.badge-todo{ color:#6c757d; }
-.portal-modal-box{
-  background: linear-gradient(180deg, rgba(13,43,51,.05), rgba(94,142,156,.06));
-  border: 1px solid var(--line);
-}
-/* ====== Upgrade visual dos cards (Portal + sacro moderno) ====== */
-
-/* Fonte (sem depender de Google Fonts) */
-.portal-bg{
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
-
-/* Card mais “premium” */
-.day-card{
-  border-radius: 18px;
-  border: 1px solid rgba(0,0,0,.08);
-  box-shadow: 0 8px 22px rgba(0,0,0,.06);
+/* ================= HEADER ================= */
+.portal-topbar {
   background: #fff;
+  border-bottom: 1px solid var(--sacro-line);
+  box-shadow: 0 4px 20px rgba(62, 50, 89, 0.04);
+}
+
+/* Logo Minimalista */
+.portal-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.portal-logo .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--sacro-gold);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.portal-logo .dot:nth-child(2) { transform: scale(1.5); opacity: 1; }
+
+.portal-title {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--sacro-dark);
+  line-height: 1;
+}
+.portal-subtitle {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--sacro-gold-dim);
+  margin-top: 4px;
+}
+
+/* Inputs e Filtros */
+.form-control {
+  background: #fff;
+  border: 1px solid var(--sacro-line);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  padding: 10px 15px;
+}
+.form-control:focus {
+  border-color: var(--sacro-gold);
+  box-shadow: 0 0 0 3px rgba(207, 168, 99, 0.15);
+}
+
+/* Botões de Filtro */
+#filterAll, #filterTodo, #filterDone, #filterRedo {
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  transition: all 0.2s;
+}
+.btn-dark {
+  background: var(--sacro-dark);
+  border-color: var(--sacro-dark);
+}
+.btn-outline-dark {
+  border-color: var(--sacro-line);
+  color: var(--text-muted);
+}
+.btn-outline-dark:hover, .btn-outline-dark.active {
+  background: var(--sacro-purple);
+  border-color: var(--sacro-purple);
+  color: #fff;
+}
+
+/* ================= HERO SECTION ================= */
+.portal-hero {
+  background: linear-gradient(135deg, var(--sacro-dark) 0%, var(--sacro-purple) 100%);
+  border-radius: var(--radius-md);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Efeito de brilho dourado sutil no fundo */
+.portal-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(207, 168, 99, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.portal-hero h1 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: #fff;
+}
+.portal-hero .kicker {
+  color: var(--sacro-gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+.portal-hero p {
+  color: rgba(255,255,255,0.7);
+  font-weight: 300;
+}
+
+/* Stats (Contadores) */
+.stat {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  text-align: center;
+  min-width: 80px;
+}
+.stat-label {
+  color: var(--sacro-gold);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.stat-value {
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+
+/* ================= CARD DO DIA (Mobile First) ================= */
+.day-card {
+  background: #fff;
+  border: 1px solid var(--sacro-line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(26, 22, 38, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
 }
 
-/* faixa suave no topo do card (efeito portal) */
-.day-card::before{
-  content:"";
-  position:absolute;
-  left:0; top:0; right:0;
-  height: 6px;
-  background: linear-gradient(90deg, var(--brand), var(--brand2), var(--accent));
-  opacity: .85;
+.day-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(26, 22, 38, 0.08);
+  border-color: var(--sacro-gold-dim);
 }
 
-/* header mais organizado */
-.day-head{
-  padding: 14px 14px 10px 14px;
-  border-bottom: 1px solid rgba(0,0,0,.06);
+/* Indicador lateral de status elegante */
+.day-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--sacro-line); /* Padrão */
+}
+.state-done::before { background: var(--state-done); }
+.state-redo::before { background: var(--state-redo); }
+.state-todo::before { background: var(--state-todo); }
+
+.day-head {
+  padding: 16px 16px 8px 20px; /* Mais padding na esq por causa da borda */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-/* título mais forte */
-.day-title{
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: .2px;
-  color: var(--ink);
+/* O "Selo" do dia */
+.pill {
+  background: var(--sacro-paper);
+  border: 1px solid var(--sacro-line);
+  color: var(--sacro-purple);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
-/* meta mais legível */
-.day-meta{
-  font-size: 12.5px;
-  color: var(--muted);
+.day-body {
+  padding: 8px 16px 16px 20px;
 }
 
-/* descrição com mais respiro */
-.day-body{
-  padding: 12px 14px 8px 14px;
-}
-.day-desc{
-  font-size: 13.5px;
-  line-height: 1.45;
-  color: #2b3137;
+.day-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--sacro-dark);
+  margin-bottom: 4px;
+  line-height: 1.2;
 }
 
-/* ações com botões mais “portal” */
-.day-actions{
-  padding: 12px 14px 14px 14px;
-  border-top: 1px solid rgba(0,0,0,.06);
-  justify-content: flex-start;
-}
-.btn-mini{
-  border-radius: 999px;
-  padding: 7px 12px;
-  font-weight: 800;
-  font-size: 12px;
+.day-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 
-/* ====== SUPER DESTAQUE PARA O DIA ====== */
-
-/* substitui a pill simples por um “badge grande” */
-.pill{
-  background: rgba(13,43,51,.06);
-  border: 1px solid rgba(13,43,51,.16);
-  color: var(--brand);
-  padding: 8px 12px;
-  border-radius: 14px;
-  font-weight: 900;
-  letter-spacing: .06em;
-  display:flex;
-  align-items:center;
-  gap:8px;
+/* Footer do Card */
+.day-actions {
+  padding: 12px 16px 12px 20px;
+  border-top: 1px dashed var(--sacro-line);
+  background: #faf9f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* número do dia grande */
-.pill::before{
-  content:"DIA";
-  font-size: 10px;
-  opacity: .75;
-  letter-spacing: .14em;
-}
-
-/* realce extra: “selo” no canto */
-.day-card .pill{
-  box-shadow: 0 8px 18px rgba(0,0,0,.08);
-}
-
-/* destaque por estado: além da borda esquerda, cria um glow suave */
-.state-done{ box-shadow: 0 10px 26px rgba(25,135,84,.12); }
-.state-redo{ box-shadow: 0 10px 26px rgba(253,126,20,.12); }
-.state-todo{ box-shadow: 0 10px 26px rgba(108,117,125,.10); }
-
-/* badge de status mais visível */
-.badge-state{
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: .08em;
+/* Badges de Status em Texto */
+.badge-state {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-top: 6px;
 }
-.badge-done{ color:#198754; }
-.badge-redo{ color:#fd7e14; }
-.badge-todo{ color:#6c757d; }
+.badge-done { color: var(--state-done); }
+.badge-redo { color: var(--state-redo); }
+.badge-todo { color: var(--state-todo); opacity: 0.6; }
 
-/* =======================
-   BOTÕES PORTAL QUARESMA
-   ======================= */
-
-/* Base */
-.btn-portal{
-  border-radius: 999px;
-  font-weight: 800;
-  font-size: 12px;
-  padding: 7px 14px;
-  transition: all .25s ease;
-  letter-spacing: .03em;
-}
-
-/* FEITA */
-.btn-feita{
-  background: linear-gradient(135deg, var(--brand), var(--brand2));
-  color: #fff;
-  border: none;
-  box-shadow: 0 6px 16px rgba(13,43,51,.25);
-}
-.btn-feita:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(13,43,51,.35);
-}
-
-/* REFAZER */
-.btn-refazer{
-  background: rgba(94,142,156,.10);
-  border: 1px solid rgba(94,142,156,.35);
-  color: var(--brand2);
-}
-.btn-refazer:hover{
-  background: rgba(94,142,156,.18);
-  transform: translateY(-2px);
-}
-
-/* VER */
-.btn-ver{
-  background: transparent;
-  border: 1px solid rgba(0,0,0,.15);
-  color: #2c333a;
-}
-.btn-ver:hover{
-  background: rgba(0,0,0,.05);
-  transform: translateY(-2px);
-}
-
-/* versão pequena */
-.btn-mini{
+/* Botões de Ação no Card */
+.btn-mini {
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
   padding: 6px 12px;
-}
-.portal-modal-box{
-  background: linear-gradient(180deg, rgba(13,43,51,.05), rgba(94,142,156,.06));
-  border: 1px solid rgba(0,0,0,.08);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-/* “dourado” do tema (ícone/realce) */
-:root{
-  --gold: #d6b15e;
+/* Botão "Marcar" */
+.btn-feita {
+  background: transparent;
+  border: 1px solid var(--state-done);
+  color: var(--state-done);
 }
-.portal-logo .dot{
-  background: var(--gold);
+.btn-feita:hover {
+  background: var(--state-done);
+  color: #fff;
+}
+
+/* Botão "Refazer" */
+.btn-refazer {
+  background: transparent;
+  border: 1px solid var(--state-redo);
+  color: var(--state-redo);
+}
+.btn-refazer:hover {
+  background: var(--state-redo);
+  color: #fff;
+}
+
+/* Botão "Ver" (olho) */
+.btn-ver {
+  color: var(--sacro-purple);
+  background: rgba(62, 50, 89, 0.05);
+  border: none;
+}
+
+/* ================= SIDEBAR / WIDGETS ================= */
+aside .card {
+  border: none;
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+
+.portal-box {
+  background: var(--sacro-paper);
+  border: 1px solid var(--sacro-gold);
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+/* Detalhe decorativo no box bíblico */
+.portal-box::after {
+  content: '†';
+  position: absolute;
+  top: 10px; right: 15px;
+  color: var(--sacro-gold);
+  font-size: 1.5rem;
+  opacity: 0.3;
+  font-family: var(--font-serif);
+}
+
+.portal-box .kicker {
+  color: var(--sacro-gold-dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+}
+.portal-box .fw-bold {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--sacro-dark);
+}
+
+/* Progress Bar */
+.progress {
+  background: var(--sacro-line);
+  border-radius: 10px;
+}
+.progress-bar {
+  background: linear-gradient(90deg, var(--sacro-gold), var(--sacro-gold-dim));
+}
+
+/* ================= MODAIS ================= */
+.modal-content {
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--sacro-paper);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--sacro-line);
+  background: #fff;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--sacro-purple);
+}
+#modalKicker {
+  color: var(--sacro-gold-dim);
+}
+
+.portal-modal-box {
+  background: #fff;
+  border: 1px solid var(--sacro-line);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+#modalDesc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--sacro-dark);
+}
+
+#modalSteps li {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+/* Botões do Modal */
+#modalDone {
+  background: var(--state-done);
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+#modalRedo {
+  color: var(--state-redo);
+  border-color: var(--state-redo);
+}
+#modalRedo:hover {
+  background: var(--state-redo);
+  color: #fff;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+  .portal-hero {
+    text-align: center;
+  }
+  .portal-hero .d-flex {
+    justify-content: center;
+  }
+  .day-head {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  .pill {
+    align-self: flex-start;
+    font-size: 0.75rem;
+  }
 }
